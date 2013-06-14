@@ -9,4 +9,13 @@
 ####3.2.アニメーションをつける
 ####3.3.daeをだす
 ####3.4.mmdをだす
+```html
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    alert($); /* 先頭に4文字のスペース、
+                 もしくはタブを挿入します */
+});
+</script>
+```
 
