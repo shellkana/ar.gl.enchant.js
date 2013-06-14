@@ -9,13 +9,25 @@
 ####3.2.アニメーションをつける
 ####3.3.daeをだす
 ####3.4.mmdをだす
-```html
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript">
-$(function() {
-    alert($); /* 先頭に4文字のスペース、
-                 もしくはタブを挿入します */
-});
-</script>
+```javascript
+enchant();
+window.onload = function() {
+    var game = new Core();
+    game.preload({
+        enchant : enchant.png
+    });
+    game.onload = function() {
+        var scene = new ARScene3D();
+        var cube = new Cube();
+        cube.y = 0.5;
+        cube.mesh.texture.src = game.assets['enchant'];
+        cube.on('enterframe', function() {
+            this.x = 2 * Math.sin(this.age / 10);
+            this.rotateYaw(Math.PI / 5);
+        })
+        scene.base.addChild(cube);
+    };
+    game.start();
+};
 ```
 
