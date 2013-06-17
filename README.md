@@ -1,22 +1,22 @@
-###1.準備
-####1.1.githubからDownload
-####1.2.マーカーの印刷
-###2.Chromeで開く
-####2.1.Same Origin Policy アクセス制限回避
+###1. 準備
+####1.1. githubからDownload
+####1.2. マーカーの印刷
+###2. Chromeで開く
+####2.1. Same Origin Policy アクセス制限回避
 gl.enchant.jsではローカルのファイルを読み込む際にセキュリティーポリシーに引っかかります。  
 詳しくは[Starting with enchant.js](http://enchantjs.com/ja/resource-ja/starting-with-enchant-js/)の解説を参照ください。  
 起動オプションの指定は[Chromeのローカルセキュリティポリシーの回避](http://dev.classmethod.jp/etc/chrome-localfile-security/)を参考にするとよいです。
-####2.2.使用するカメラの変更
+####2.2. 使用するカメラの変更
 以下は、USBのWebカメラを利用する場合の手順です。  
 1.設定【chrome://settings/】をひらく  
 2.下方の詳細設定を表示をクリック  
 3.プライバシーのコンテンツの設定をクリック  
 4.下から２番目のメディアのカメラの部分を変更
-####2.3.開き方の注意
+####2.3. 開き方の注意
 samples/sample1フォルダのindex.htmlをChromeにドラッグ&ドロップで開きます。  
 Macではダブルクリックで開くとカメラが起動しなくなります。
-###3.改造する
-####3.1.primitiveをだす
+###3. 改造する
+####3.1. primitiveをだす
 samples/sample1フォルダのmain.jsをテキストエディタで開きます。
 ```javascript
 enchant();
@@ -52,9 +52,9 @@ window.onload = function() {
 ```
 このように書くことで球と直方体を共存できます。  
 baseはマーカーに重なるように配置されたPlaneXYを指します。
-####3.2.アニメーションをつける
-####3.3.daeをだす
-####3.4.mmdをだす
+####3.2. アニメーションをつける
+####3.3. daeをだす
+####3.4. mmdをだす
 ```javascript
 enchant();
 window.onload = function() {
