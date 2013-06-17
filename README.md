@@ -13,11 +13,11 @@ gl.enchant.jsではローカルのファイルを読み込む際にセキュリ�
 3.プライバシーのコンテンツの設定をクリック  
 4.下から２番目のメディアのカメラの部分を変更
 ####2.3.開き方の注意
-解凍ファイル直下のindex.htmlをChromeにドラッグ&ドロップで開きます。  
+samples/sample1フォルダのindex.htmlをChromeにドラッグ&ドロップで開きます。  
 Macではダブルクリックで開くとカメラが起動しなくなります。
 ###3.改造する
 ####3.1.primitiveをだす
-解凍ファイル直下のmain.jsをテキストエディターで開きます。
+samples/sample1フォルダのmain.jsをテキストエディターで開きます。
 ```javascript
 enchant();
 window.onload = function() {
