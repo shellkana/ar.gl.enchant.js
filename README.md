@@ -17,7 +17,7 @@ samples/sample1フォルダのindex.htmlをChromeにドラッグ&ドロップで
 Macではダブルクリックで開くとカメラが起動しなくなります。
 ###3.改造する
 ####3.1.primitiveをだす
-samples/sample1フォルダのmain.jsをテキストエディターで開きます。
+samples/sample1フォルダのmain.jsをテキストエディタで開きます。
 ```javascript
 enchant();
 window.onload = function() {
@@ -25,7 +25,7 @@ window.onload = function() {
     game.onload = function() {
         var scene = new ARScene3D();
         var cube = new Cube();
-        cube.y = 0.5;
+        cube.z = 0.5;
         scene.base.addChild(cube);
     };
     game.start();
@@ -40,10 +40,10 @@ window.onload = function() {
     game.onload = function() {
         var scene = new ARScene3D();
         var cube = new Cube();
-        cube.y = 0.5;
+        cube.z = 0.5;
         scene.base.addChild(cube);
         var sphere = new Sphere();
-        sphere.y = 0.5;
+        sphere.z = 0.5;
         sphere.x = 1;
         scene.base.addChild(sphere);
     };
