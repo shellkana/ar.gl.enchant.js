@@ -1,6 +1,11 @@
+#ar.gl.enchant.js
+このライブラリはMITライセンスのもとで利用可能です。
+このライブラリに付属するライブラリはコード内のライセンス記載に従い再配布しています。
 ###1. 準備
 ####1.1. githubからDownload
+[Download Zip file](https://github.com/shellkana/ar.gl.enchant.js/archive/master.zip)
 ####1.2. マーカーの印刷
+<img src="1001.png" width="70" height="70" >
 ###2. Chromeで開く
 ####2.1. Same Origin Policy アクセス制限回避
 gl.enchant.jsではローカルのファイルを読み込む際にセキュリティーポリシーに引っかかります。  
