@@ -33,7 +33,6 @@ if (enchant.gl !== undefined) {( function() {
                 this.scaleX = core.width / core.height;
                 this._hasBaseId = false;
                 var mkSize = (markerSize) ? markerSize : 20;
-                var core = enchant.Core.instance;
                 this.posit = new POS.Posit(mkSize, core.width);
                 this.base = base;
                 this.video = document.getElementById("video");
@@ -88,6 +87,7 @@ if (enchant.gl !== undefined) {( function() {
             },
             applyMarker2Sprite3D : function(marker, obj) {
                 var corners = marker.corners;
+                var core = enchant.Core.instance;
                 for (var i = 0; i < corners.length; ++i) {
                     var corner = corners[i];
                     corner.x = corner.x - (core.width / 2);
